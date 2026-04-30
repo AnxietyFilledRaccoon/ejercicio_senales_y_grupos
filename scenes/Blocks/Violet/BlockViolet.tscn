@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://b51x1yackyyc"]
 
 [ext_resource type="Texture2D" uid="uid://c0f3vvctal5va" path="res://assets/block_violet.png" id="1"]
+[ext_resource type="Script" uid="uid://7ngbc558jtcq" path="res://scenes/Blocks/Violet/block_violet.gd" id="1_u48kq"]
 
 [sub_resource type="CircleShape2D" id="1"]
 radius = 32.903
 
 [node name="BlockRed" type="RigidBody2D" unique_id=494245712 groups=["blocks"]]
 gravity_scale = 2.0
+script = ExtResource("1_u48kq")
 
 [node name="Sprite" type="Sprite2D" parent="." unique_id=1596675483]
 scale = Vector2(0.5, 0.5)
