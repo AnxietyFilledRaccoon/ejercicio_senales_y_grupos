@@ -16,12 +16,12 @@ func _ready():
 
 
 func _on_red_generator_button_down() -> void:
-	pass # Replace with function body.
-
+	$RedGenerator.connect("button_down",Callable(self,"_on_button_down"))
+	count_new_instance()
 
 func _on_violet_generator_button_down() -> void:
-	pass # Replace with function body.
-
+	$VioletGenerator.connect("button_down",Callable(self,"_on_button_down"))
+	count_new_instance()
 
 func _on_reset_button_down() -> void:
 	get_tree().call_group("blocks", "delete")
