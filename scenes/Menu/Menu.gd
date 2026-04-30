@@ -17,3 +17,7 @@ func _on_red_generator_button_down() -> void:
 
 func _on_violet_generator_button_down() -> void:
 	pass # Replace with function body.
+
+
+func _on_reset_button_down() -> void:
+	get_tree().call_group("blocks", "delete")
