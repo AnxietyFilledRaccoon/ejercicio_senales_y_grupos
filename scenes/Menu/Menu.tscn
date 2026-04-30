@@ -9,7 +9,7 @@
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(1519.98, 67.3924)
 
-[node name="Menu" type="Node2D" unique_id=576362087]
+[node name="Menu" type="Node2D" unique_id=576362087 groups=["blocks"]]
 script = ExtResource("5")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1299630884]
